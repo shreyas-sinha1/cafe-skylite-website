@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafe SkyLite | Great Food. Rooftop Vibes. Patna Skyline.</title>
+  <meta name="description" content="Cafe SkyLite Patna — Modern rooftop cafe & restaurant on Bailey Road. North Indian, Chinese, Mughlai, Continental. Rooftop seating, casual dining, group hangouts. Reserve now!">
+  <meta name="keywords" content="Patna rooftop cafe, rooftop restaurant Patna, Cafe Skylite, Bailey Road restaurant, multi-cuisine Patna, casual dining, group hangout Patna, birthday celebration">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Floating Action Buttons -->
+  <div class="action-bar" id="actionBar">
+    <a href="tel:+919031023202" class="action-btn" aria-label="Call">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+      <span>Call</span>
+    </a>
+    <a href="https://wa.me/919031023202" target="_blank" rel="noopener" class="action-btn" aria-label="WhatsApp">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      <span>WhatsApp</span>
+    </a>
+    <a href="https://maps.google.com/?q=6th+Floor+KV+Complex+Bailey+Road+RPS+More+Kaliket+Nagar+Patna+Bihar+801503" target="_blank" rel="noopener" class="action-btn" aria-label="Directions">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+      <span>Map</span>
+    </a>
+    <a href="#reserve" class="action-btn" aria-label="Reserve Table">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3v8h2.5v8H21V2c-2.76 0-5 2.24-5 4z"/></svg>
+      <span>Reserve</span>
+    </a>
+    <a href="https://www.swiggy.com/restaurants?search=Cafe%20Skylite%20Patna" target="_blank" rel="noopener" class="action-btn action-btn-primary" aria-label="Order Online">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+      <span>Order</span>
+    </a>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#home" class="logo">Cafe Skylite</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero / Home -->
+  <header class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-overlay"></div>
+      <div class="hero-slant"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-tag animate-fade-up">Great Food. Rooftop Vibes.</p>
+      <h1 class="hero-title animate-fade-up delay-1">Cafe Skylite</h1>
+      <p class="hero-subtitle animate-fade-up delay-2">Patna Skyline</p>
+      <p class="hero-desc animate-fade-up delay-3">North Indian • Chinese • Mughlai • Continental • Fast Food</p>
+      <div class="hero-buttons animate-fade-up delay-4">
+        <a href="#menu" class="btn btn-primary">View Menu</a>
+        <a href="#reserve" class="btn btn-outline">Reserve a Table</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Our Story</span>
+        <h2>Modern Rooftop Cafe & Restaurant</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>Cafe Skylite brings you <strong>Great Food</strong> with <strong>Rooftop Vibes</strong> and stunning views of the <strong>Patna Skyline</strong>. A casual dining lounge perfect for group hangouts, family meals, and birthday celebrations.</p>
+          <ul class="about-features">
+            <li><span class="icon"> </span> Rooftop & outdoor seating</li>
+            <li><span class="icon"> </span> Free Wi-Fi</li>
+            <li><span class="icon"> </span> Family-friendly</li>
+            <li><span class="icon"> </span> Birthday / celebration friendly</li>
+            <li><span class="icon"> </span> Takeaway & home delivery</li>
+            <li><span class="icon"> </span> Parking nearby</li>
+          </ul>
+          <div class="ratings">
+            <div class="rating-item"><span class="stars">★★★★★</span> Google ~4.7</div>
+            <div class="rating-item"><span class="stars">★★★★☆</span> Zomato ~4.2</div>
+          </div>
+        </div>
+        <div class="about-image reveal">
+          <div class="image-card">
+            <div class="image-card-inner"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section class="section menu-section" id="menu">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Taste the Skyline</span>
+        <h2>Our Menu</h2>
+        <p class="section-desc">Multi-cuisine delights from North Indian to Continental</p>
+      </div>
+      <div class="menu-filters reveal">
+        <button class="filter-btn active" data-section="all">All</button>
+        <button class="filter-btn" data-section="Soups">Soups</button>
+        <button class="filter-btn" data-section="Salads">Salads</button>
+        <button class="filter-btn" data-section="Appetizers">Appetizers</button>
+        <button class="filter-btn" data-section="Tandoor">Tandoor</button>
+        <button class="filter-btn" data-section="Chinese">Chinese</button>
+        <button class="filter-btn" data-section="Burgers">Burgers</button>
+        <button class="filter-btn" data-section="Pizza">Pizza</button>
+        <button class="filter-btn" data-section="Pasta">Pasta</button>
+        <button class="filter-btn" data-section="Indian Veg">Indian Veg</button>
+        <button class="filter-btn" data-section="Indian Non-Veg">Indian Non-Veg</button>
+        <button class="filter-btn" data-section="Biryani">Biryani</button>
+        <button class="filter-btn" data-section="Sandwiches">Sandwiches</button>
+        <button class="filter-btn" data-section="Dal & Lentils">Dal</button>
+        <button class="filter-btn" data-section="Continental">Continental</button>
+        <button class="filter-btn" data-section="Noodles & Rice">Noodles</button>
+        <button class="filter-btn" data-section="Rice">Rice</button>
+        <button class="filter-btn" data-section="Breads">Breads</button>
+        <button class="filter-btn" data-section="Desserts">Desserts</button>
+      </div>
+      <div class="menu-grid" id="menuGrid">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="section gallery" id="gallery">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Atmosphere</span>
+        <h2>Rooftop Vibes</h2>
+      </div>
+      <div class="gallery-grid reveal">
+        <div class="gallery-item" style="--delay:0">
+          <div class="gallery-img" style="background-image: url('assets/c__Users_sinha_AppData_Roaming_Cursor_User_workspaceStorage_abe49f9a54980b1153ed468954c0a456_images_2025-03-08-23246815-09cf-4733-9fdc-f488a09cb035.png');"></div>
+        </div>
+        <div class="gallery-item" style="--delay:0.1">
+          <div class="gallery-img" style="background-image: url('assets/c__Users_sinha_AppData_Roaming_Cursor_User_workspaceStorage_abe49f9a54980b1153ed468954c0a456_images_p2-9c7843f1-4609-4684-bfc8-0aae678d611a.png');"></div>
+        </div>
+        <div class="gallery-item" style="--delay:0.2">
+          <div class="gallery-img" style="background-image: url('assets/c__Users_sinha_AppData_Roaming_Cursor_User_workspaceStorage_abe49f9a54980b1153ed468954c0a456_images_pt5-99829479-1c88-4fc8-bae6-baa887485677.png');"></div>
+        </div>
+        <div class="gallery-item" style="--delay:0.3">
+          <div class="gallery-img" style="background-image: url('assets/c__Users_sinha_AppData_Roaming_Cursor_User_workspaceStorage_abe49f9a54980b1153ed468954c0a456_images_pt3-c1647325-4951-4cca-af30-72dc49dd5967.png');"></div>
+        </div>
+        <div class="gallery-item" style="--delay:0.4">
+          <div class="gallery-img" style="background-image: url('assets/c__Users_sinha_AppData_Roaming_Cursor_User_workspaceStorage_abe49f9a54980b1153ed468954c0a456_images_pt4-d953d5c6-7e56-409b-bf06-c09427ac16df.png');"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Reserve -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <span class="section-label">Visit Us</span>
+          <h2>Contact & Hours</h2>
+          <address>
+            <p>6th Floor, KV Complex</p>
+            <p>Bailey Road, Above Silk House Hotel</p>
+            <p>RPS More, Kaliket Nagar</p>
+            <p>Patna, Bihar 801503, India</p>
+          </address>
+          <p class="phone"><a href="tel:+919031023202">+91 90310 23202</a></p>
+          <div class="hours">
+            <h4>Opening Hours</h4>
+            <p>11:00 AM – 11:00 PM</p>
+            <p>Open all week</p>
+          </div>
+          <p class="cost">Average for two: ₹800 – ₹1500 • ~₹500 per person</p>
+        </div>
+        <div class="reserve-box reveal" id="reserve">
+          <h3>Reserve a Table</h3>
+          <form class="reserve-form" id="reserveForm">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="tel" name="phone" placeholder="Phone" required>
+            <input type="email" name="email" placeholder="Email">
+            <input type="date" name="date" required>
+            <input type="time" name="time" required>
+            <input type="number" name="guests" placeholder="Number of guests" min="1" max="20" required>
+            <textarea name="note" placeholder="Special requests (optional)"></textarea>
+            <button type="submit" class="btn btn-primary">Reserve Now</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>Cafe Skylite</h3>
+          <p>Great Food. Rooftop Vibes. Patna Skyline.</p>
+        </div>
+        <div class="footer-links">
+          <a href="tel:+919031023202">Call</a>
+          <a href="https://wa.me/919031023202" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="https://maps.google.com/?q=6th+Floor+KV+Complex+Bailey+Road+Patna" target="_blank" rel="noopener">Directions</a>
+          <a href="https://www.swiggy.com" target="_blank" rel="noopener">Order (Swiggy/Zomato)</a>
+        </div>
+      </div>
+      <p class="footer-copy">&copy; Cafe Skylite. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
