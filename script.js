@@ -245,11 +245,22 @@ const MENU_DATA = {
 };
 
 // Render menu cards
-function renderMenu(filter = 'all') {
+function renderMenu(filter = null) {
   const grid = document.getElementById('menuGrid');
   grid.innerHTML = '';
-  let index = 0;
 
+  // Show prompt if no filter selected
+  if (!filter) {
+    grid.innerHTML = `
+      <div class="menu-empty-state">
+        <span class="menu-empty-icon">🍽️</span>
+        <p>Select a category above to explore our menu</p>
+      </div>
+    `;
+    return;
+  }
+
+  let index = 0;
   MENU_DATA.menu.forEach(sectionData => {
     if (filter !== 'all' && filter !== sectionData.section) return;
     sectionData.items.forEach(item => {
@@ -349,7 +360,7 @@ function initSmoothScroll() {
 
 // Init
 document.addEventListener('DOMContentLoaded', () => {
-  renderMenu();
+  renderMenu(); // no default category — shows compact empty state
   initMenuFilters();
   initScrollReveal();
   initNavScroll();
